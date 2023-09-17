@@ -226,6 +226,9 @@ input[type= "search"], textarea{
     background-color: #353535;
     color: white;
     }
+.footer-menus{
+    margin-top: 50px;
+}
 
 h5{
     font-weight: 400;
@@ -244,7 +247,52 @@ h5{
 .fa-solid{
     padding-right: 7px;
     }
+    
+/* !!!!!!!!!!!!!!!!!!!!!!! --- PAGES -MENUS --- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
+.arrow-left{
+    
+    font-size: 45px;
+}
+.menu-container{
+        background-color: #F6F6F6;
+        margin-bottom: 60px;
+    }
+
+.menu-items{
+    min-width: 260px;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.124);
+    background-color: #F6F6F6;
+    }
+
+    .button2{
+        
+        width: 250px;
+        height: 60px;
+        border-radius: 25px;
+        background-color: #FF79DA;
+        background-image: linear-gradient(to bottom right, #FF79DA, #9356DC );
+        box-shadow: 0 2px 5px 5px rgba(0,0,0,.08);
+        border: none;
+        color: white;    
+        font-size: 16px;
+        padding: 10px 50px 10px 50px;
+        
+        }
+        .button2center{
+           text-align: center; 
+        }
+
+        .button2:hover{
+            
+            background-image: linear-gradient(to bottom right, #fb8cdc, #a070db );
+            box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.238);
+            transition-property: all;
+            transition-duration: 2s;
+            }
 
 /* !!!!!!!!!!!!!!!!!!!!!!! --- RESPONSIVE --- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
