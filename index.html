@@ -10,10 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/3f221af140.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 
@@ -23,7 +22,24 @@
     
     
 <!-- *******************   HEADER   **************************** -->
+
 <header>
+  
+  
+ 
+
+     <div id="overlayer"></div>
+    <div class="preloader">
+       <div class="loader">
+          <span class="loader-inner"></span>
+       </div>
+       <p> Loading...</p>
+    </div>
+
+<div class="loader"></div>  
+
+
+
 
 <div class="logo">
 <img class="logo-omf" src="images/logo/ohmyfood.png" alt="OhMyFood">
@@ -47,12 +63,12 @@
 
 
 <div class="headertext">
-    <h1>Réservez le menu qui vous convient</h1>
-    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+    <section class="titlehome">
+        <h1>Réservez le menu qui vous convient</h1>
+    </section>
+    <section class="sub-title">Découvrez des restaurants d'exception, sélectionnés par nos soins.</section>
 </div>
-    
     <a class="button1" href="#"> Explorer nos restaurants </a>
-    
 </div>
 <!-- *******************   Fonctionnement   **************************** -->
 <div class="fonctionnement">  
@@ -62,21 +78,21 @@
 
 <a class="step" href="#">
 <span class="circle">1</span>
-<i class="fa-solid fa-mobile-screen-button"></i>
-Choisissez un restaurant
+<i class="fa-solid fa-mobile-screen-button icon-home"></i>
+<span class="foncti-text"> Choisissez un restaurant</span>
 </a>
 
 
 <a class="step" href="#">
 <span class="circle">2</span>
-<i class="fa-solid fa-list"></i>
-Composez votre menu
+<i class="fa-solid fa-list icon-home"></i>
+<span class="foncti-text"> Composez votre menu</span>
 </a>
 
 <a class="step" href="#">
 <span class="circle">3</span>
-<i class="fa-solid fa-store">
-</i>Dégustez au restaurant
+<i class="fa-solid fa-store"></i>
+<span class="foncti-text">Dégustez au restaurant </span>
 </a>
 
 
@@ -104,8 +120,8 @@ Composez votre menu
 
     <div class="card-text">  
         <div class="texto">
-        <h2>  La palette du goût </h2>
-        <p>  Ménilmontant</p>
+        <span class="texto1">  La palette du goût </span>
+        <span class="texto2">  Ménilmontant</span>
         </div>    
         
         <div class="hearts">
@@ -113,7 +129,8 @@ Composez votre menu
         <i class="fa-solid fa-heart position-h heart-full"></i>
         </div>
 
-    </div>     
+    </div>  
+       
     </a>     
     </div>
     
@@ -125,8 +142,8 @@ Composez votre menu
 
     <div class="card-text">    
         <div class="texto">
-        <h2>  La note enchantée </h2>
-        <p>  Charonne</p>
+        <span class="texto1">  La note enchantée </span>
+        <span class="texto2">  Charonne</span>
         </div>
 
         <div class="hearts">
@@ -144,8 +161,8 @@ Composez votre menu
 
     <div class="card-text"> 
         <div class="texto">
-        <h2>  À la française </h2>
-        <p>  Cité Rouge</p>
+        <span class="texto1">  À la française </span>
+        <span class="texto2"> Cité Rouge</span>
         </div> 
         
         <div class="hearts">
@@ -163,8 +180,8 @@ Composez votre menu
 
     <div class="card-text"> 
         <div class="texto">
-        <h2> Le délice des sens  </h2>
-        <p> Folie-Méricourt </p>
+        <span class="texto1"> Le délice des sens  </span>
+        <span class="texto2"> Folie-Méricourt </span>
         </div>
 
         <div class="hearts">
@@ -192,10 +209,10 @@ Composez votre menu
 
 <div>
     <ul class="links-footer">
-        <li> <a href="#">  <i class="fa-solid fa-utensils"></i> Proposer un restaurant</a> 
+        <li> <a href="#">  <i class="fa-solid fa-utensils footer-icon"></i> Proposer un restaurant</a> 
         </li>
 
-        <li> <a href="#"> <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire  </a>
+        <li> <a href="#"> <i class="fa-solid fa-handshake-angle footer-icon"></i>Devenir partenaire  </a>
         </li>
 
         <li> <a href="#">Mentions légales  </a>
