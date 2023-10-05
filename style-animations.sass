@@ -1,0 +1,125 @@
+/* SASS file: This is only for the animations, Main pagae LOADER and Menu appear
+
+
+/* PRE LOADER 
+.loading
+    padding-top: 70px 
+    text-align: center
+    font-weight: 400
+    font-size: 50px
+    font-family: Shrikhand
+    font-style: italic
+
+.loader
+    position: fixed
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    background-color: #E7DFDE
+    height: 100vh
+    z-index: 1
+    opacity: 1
+    animation: startloader 350ms
+    animation-fill-mode: forwards
+    animation-delay: 3s
+
+
+
+@keyframes startloader
+    0%             
+        transform: scale(1)      
+    100% 
+        transform: scale(0)
+
+.bottle
+    width: 40px
+    height: 98px
+    display: inline-block
+    position: absolute
+    top: 40%
+    left: 50%
+    border: 2px solid #112011
+    box-sizing: border-box
+    color: rgba(89, 6, 49, 0.9)
+    border-radius: 20px 20px 4px 4px
+    background: #3c5f53
+    animation: fill 3s linear
+ 
+
+.bottle::after 
+    content: ''
+    box-sizing: border-box
+    position: absolute
+    left: 50%
+    top: 0%
+    transform: translate(-50% , -95%)
+    border: 2px solid #112011
+    border-bottom: none
+    background: #3c5f53
+    width: 15px
+    height: 35px
+    animation: fillNeck 3s linear
+
+@keyframes fill 
+    0% 
+        box-shadow: 0 0  inset 
+    50% , 100%  
+        box-shadow: 0 -98px inset 
+
+@keyframes fillNeck 
+    0% , 50%
+        box-shadow: 0 0  inset 
+    100% 
+        box-shadow: 0 -20px inset 
+
+
+
+/*  Menu fading-in effect
+
+.delay-0
+    animation: fading-in .6s  
+    animation-delay: 0s
+    animation-fill-mode: both  
+.delay-1
+    animation: fading-in .6s
+    animation-delay: 0.1s
+    animation-fill-mode: both
+.delay-2
+    animation: fading-in .6s 
+    animation-delay: 0.2s
+    animation-fill-mode: both
+.delay-3
+    animation: fading-in .6s  
+    animation-delay: 0.3s
+    animation-fill-mode: both   
+.delay-4
+    animation: fading-in .6s
+    animation-delay: 0.4s
+    animation-fill-mode: both   
+.delay-5
+    animation: fading-in .6s 
+    animation-delay: 0.5s
+    animation-fill-mode: both
+.delay-6
+    animation: fading-in .6s  
+    animation-delay: 0.6s
+    animation-fill-mode: both  
+.delay-7
+    animation: fading-in .6s
+    animation-delay: 0.7s
+    animation-fill-mode: both
+.delay-8
+    animation: fading-in .6s 
+    animation-delay: 0.8s
+    animation-fill-mode: both
+.delay-9
+    animation: fading-in .6s 
+    animation-delay: 0.9s
+    animation-fill-mode: both
+
+@keyframes fading-in
+    0% 
+        transform: scaley(0)
+    100%    
+        transform: scaley(1)
