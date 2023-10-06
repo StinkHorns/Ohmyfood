@@ -504,9 +504,7 @@ input[type= "search"], textarea{
 /* !!!!!!!!!!!!!!!!!!!!!!! --- RESPONSIVE Desktop --- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media screen and (min-width: 1440px){
-.logo {
-    background-color: red;
-    }   
+  
 
 .titlehome{
     font-size: 40px;
