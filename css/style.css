@@ -169,6 +169,8 @@ input[type= "search"], textarea{
     }
 
 .titlehome{
+    font-size: 24px;
+    font-weight: 700;
     padding-left: 40px;
     padding-right: 48px;
     padding-bottom: 13px;
@@ -268,7 +270,8 @@ input[type= "search"], textarea{
     box-shadow: 0px 3px 15px 0px #0000001A;
     border-radius: 25px 25px 25px 25px;
     min-width: 340px;
-    max-width: 340Px;
+    width: 100%;
+    object-fit: fill;   
     background-color: white;
     position: relative;
     top: 0;
@@ -498,10 +501,79 @@ input[type= "search"], textarea{
     transition-duration: 2s;
     }
 
-/* !!!!!!!!!!!!!!!!!!!!!!! --- RESPONSIVE --- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!! --- RESPONSIVE Desktop --- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
+@media screen and (min-width: 1440px){
+.logo {
+    background-color: red;
+    }   
 
+.titlehome{
+    font-size: 40px;
+    }
+h1{
+    padding-left: 11%;    
+    }
+.steps{
+    flex-direction: row;
+    justify-content: center;    
+    padding-top: 25px;
+    padding-bottom: 5px;
+    gap: 35px;    
+    }
+.big-icon{
+    font-size: x-large;
+    }
+.step{
+    padding-top: 22px;
+    padding-bottom: 2px;
+    padding-right: 90px;
+    margin-bottom: 0px;
+    }
+.restaurants{
+    padding-bottom: 100px;
+    }
+.restos{
+    padding-top: 28px;
+    flex-direction: row;  
+    justify-content: center;
+    flex-wrap: wrap;  
+    gap: 100px;
+    }
+.card-resto{
+    max-width: 490px;
+    background-color: white;
+    position: relative;
+    top: 0;
+    left: 0;   
+    margin-bottom: -50px; 
+    }
+.footer{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 115px;
+    padding-top: 60px;
+    }
+.footer-logo{  
+   padding-right: 60px;
+   padding-left: 50px;
+    }
+.links-footer{  
+    padding-top: 0;
+    display: flex;
+    flex-direction: row; 
+    }
+.contact{
+    padding-right: 5px;
+    }
+.mentions{
+    padding-right: 20px;
+    }
+.devenir{
+    padding-right: 50px;
+    }
+.proposer{
+    padding-right: 20px;
+    }
 
-@media screen and (max-width: 1440px) and (min-width: 1025px) {}
-@media screen and (max-width: 1024px) and (min-width: 768px) {}
-@media screen and (max-width: 767px) {}
+}
