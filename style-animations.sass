@@ -77,11 +77,18 @@
 
 /*  Menu fading-in effect
 
-.delay-0
-    animation: fading-in .6s  
-    animation-delay: 0s
+/*@mixin delays ($delay)
+    animation: fading-in .6s 
+    animation-delay:$delay
     animation-fill-mode: both  
-.delay-1
+    
+.delay-0
+    /*@include delays (0s)
+    /animation: fading-in .6s  
+    animation-delay: 0s
+    animation-fill-mode: both 
+   
+.delay-1   
     animation: fading-in .6s
     animation-delay: 0.1s
     animation-fill-mode: both
